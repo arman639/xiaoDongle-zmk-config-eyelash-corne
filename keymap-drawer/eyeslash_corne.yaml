@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyeslash_corne}
 layers:
   QWERTY:
-  - {t: '$$mdi:keyboard-esc$$', h: multimedia}
+  - {t: '$$mdi:keyboard-esc$$', h: MULTIMEDIA}
   - Q
   - W
   - E
@@ -45,7 +45,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - LGUI
   - {t: OSL L, h: '&mo_release_alt_macro A'}
-  - {t: '$$mdi:keyboard-space$$', h: Fn-Num}
+  - {t: '$$mdi:keyboard-space$$', h: FN-NUM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: OSL R, h: NAV}
   - $$mdi:apple-keyboard-option$$
@@ -147,7 +147,7 @@ layers:
   - {t: _, h: SYMBOL}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn-Num:
+  FN-NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - F3
   - F4
@@ -199,8 +199,8 @@ layers:
   OSL L:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: win_layer, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: explorer, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: WIN, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: EXPLORER, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -215,7 +215,7 @@ layers:
   - {t: '&sk_hrm_macro LALT', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '&sk_hrm_macro LSHFT', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '&sk_hrm_macro LCTRL', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: Toggle_Layer, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: TOGGLE, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -294,7 +294,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  locked:
+  LOCK:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -343,7 +343,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Mouse:
+  MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -392,7 +392,7 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:mouse-left-click-outline$$', type: held}
   - {t: QWERTY, h: toggle}
-  explorer:
+  EXPLORER:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+W
@@ -441,7 +441,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  win_layer:
+  WIN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+F4
   - {t: '$$mdi:minus-circle-outline$$', type: held}
@@ -490,7 +490,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  multimedia:
+  MULTIMEDIA:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -539,7 +539,7 @@ layers:
   - RETURN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Toggle_Layer:
+  TOGGLE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -588,7 +588,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  gaming:
+  GAMING:
   - $$mdi:keyboard-tab$$
   - {t: '1', s: '!'}
   - '2'
@@ -637,7 +637,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  gaming_toggle:
+  GAME_TOG:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -680,7 +680,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - gaming
+  - GAMING
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -689,16 +689,16 @@ layers:
 combos:
 - p: [1, 5]
   k: {t: QWERTY, h: toggle}
-  l: [locked]
+  l: [LOCK]
 - p: [1, 5]
-  k: {t: locked, h: toggle}
+  k: {t: LOCK, h: toggle}
   l: [QWERTY]
 - p: [38, 39]
   k: {t: OSL R, h: '$$mdi:gesture-tap-hold$$'}
-  l: [Fn-Num, SYMBOL]
+  l: [FN-NUM, SYMBOL]
 - p: [30, 31]
   k: {t: OSL L, h: '$$mdi:gesture-tap-hold$$'}
-  l: [Fn-Num, SYMBOL]
+  l: [FN-NUM, SYMBOL]
 - p: [2, 4]
   k: $$mdi:progress-download$$
   l: [OSL L]
@@ -712,8 +712,8 @@ combos:
   k: {t: '$$mdi:backup-restore$$', type: bootloader}
   l: [OSL R]
 - p: [14, 18]
-  k: {t: gaming_toggle, h: toggle}
+  k: {t: GAME_TOG, h: toggle}
   l: [QWERTY]
 - p: [14, 18]
   k: {t: QWERTY, h: toggle}
-  l: [gaming_toggle]
+  l: [GAME_TOG]
