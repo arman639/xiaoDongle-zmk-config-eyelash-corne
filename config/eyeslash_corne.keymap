@@ -435,10 +435,10 @@
 
         gaming_toggle {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &mo 12  &kp SPACE                                    &trans  &none   &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans     &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans     &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans     &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                            &mo 12  &kp SPACE  &kp SPACE                                    &trans  &none   &trans
             >;
         };
     };
