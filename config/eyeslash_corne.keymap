@@ -342,10 +342,10 @@
         osl_l_layer {
             display-name = "OSL L";
             bindings = <
-&trans         &trans                            &sl 10                   &sl 8                      &trans                     &none                                      &mmv MOVE_UP                     &trans  &studio_unlock  &trans  &trans  &trans  &trans
-&to 0          &hrm_hold_macro LS(LEFT_CONTROL)  &hrm_behavior LALT LALT  &hrm_behavior LSHFT LSHFT  &hrm_behavior LCTRL LCTRL  &sl 11                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans          &trans  &trans  &trans  &trans
-&kp RC(RSHFT)  &kp LC(HOME)                      &kp LC(END)              &none                      &none                      &kp PAUSE_BREAK  &trans                    &mmv MOVE_DOWN                   &trans  &trans          &trans  &trans  &trans  &trans
-                                                                          &trans                     &trans                     &gui_macro                                                                  &trans  &trans          &trans
+&trans         &trans                            &sl 10                   &sl 8                      &trans                     &none                                 &mmv MOVE_UP                     &trans  &studio_unlock  &trans  &trans  &trans  &trans
+&to 0          &hrm_hold_macro LS(LEFT_CONTROL)  &hrm_behavior LALT LALT  &hrm_behavior LSHFT LSHFT  &hrm_behavior LCTRL LCTRL  &sl 11                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans          &trans  &trans  &trans  &trans
+&kp RC(RSHFT)  &kp LC(HOME)                      &kp LC(END)              &none                      &none                      &trans      &trans                    &mmv MOVE_DOWN                   &trans  &trans          &trans  &trans  &trans  &trans
+                                                                          &trans                     &trans                     &gui_macro                                                             &trans  &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -356,7 +356,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                            &mmv MOVE_UP                     &sys_reset  &trans                   &trans                       &trans                     &trans                           &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans      &hrm_behavior RALT RALT  &hrm_behavior RSHIFT RSHIFT  &hrm_behavior RCTRL RCTRL  &hrm_behavior LEFT_GUI LEFT_GUI  &to 0
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &kp INSERT  &trans                   &trans                       &trans                     &trans                           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &trans      &trans                   &trans                       &trans                     &trans                           &trans
                         &trans  &trans  &trans                                                             &trans      &trans                   &trans
             >;
 
@@ -395,10 +395,10 @@
 
         multimedia_layer {
             bindings = <
-&none  &none  &none           &kp UP_ARROW    &none            &none                  &none         &none       &none  &none  &none  &none  &none
-&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &none  &none  &none  &none       &none  &none  &none  &none  &none
-&none  &none  &none           &none           &none            &none  &none           &none         &none       &none  &none  &none  &none  &none
-                              &none           &none            &none                                &kp RETURN  &none  &none
+&none  &none  &kp C_VOLUME_DOWN  &kp UP_ARROW    &kp C_VOLUME_UP  &none                  &none         &none       &none  &none  &none  &none  &none
+&none  &none  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &none  &none  &none  &none       &none  &none  &none  &none  &none
+&none  &none  &none              &none           &none            &none  &none           &none         &none       &none  &none  &none  &none  &none
+                                 &none           &none            &none                                &kp RETURN  &none  &none
             >;
         };
 
