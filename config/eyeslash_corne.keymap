@@ -294,7 +294,7 @@
         base_layer {
             display-name = "QWERTY";
             bindings = <
-&lt 10 ESCAPE   &kp Q  &kp W  &kp E     &kp R                          &kp T                                 &mmv MOVE_UP                     &kp Y       &kp U      &kp I      &kp O    &kp P     &kp GRAVE
+&lt 9 ESCAPE    &kp Q  &kp W  &kp E     &kp R                          &kp T                                 &mmv MOVE_UP                     &kp Y       &kp U      &kp I      &kp O    &kp P     &kp GRAVE
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F                          &kp G                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H       &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V                          &kp B        &none                    &mmv MOVE_DOWN                   &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mkp LCLK
                               &kp LGUI  &layer_tap_release_alttab A 4  &lt 3 SPACE                                                            &sk RSHIFT  &oslr 2 5  &kp RALT
@@ -318,22 +318,22 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&kp TAB     &none         &mo 0               &mo 0       &none      &none                                    &mmv MOVE_UP                     &kp LC(Y)         &kp HOME   &kp UP     &kp END    &kp DELETE            &none
-&kp ESCAPE  &kp LEFT_GUI  &mt LALT LC(LS(S))  &kp RSHIFT  &kp LCTRL  &kp LG(T)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp TAB           &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC              &msc SCRL_UP
-&trans      &kp LC(Z)     &kp LC(X)           &kp LC(C)   &kp LC(V)  &none      &kp C_MUTE                    &mmv MOVE_DOWN                   &trans            &kp PG_UP  &kp PG_DN  &kp RET    &comment_ignore_mods  &msc SCRL_DOWN
-                                              &trans      &mo 0      &trans                                                                    &lt 1 UNDERSCORE  &trans     &trans
+&kp TAB     &none         &mo 13              &mo 12      &none      &none                                    &mmv MOVE_UP                     &kp LC(Y)           &kp HOME   &kp UP     &kp END    &kp DELETE            &none
+&kp ESCAPE  &kp LEFT_GUI  &mt LALT LC(LS(S))  &kp RSHIFT  &kp LCTRL  &kp LG(T)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp TAB             &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC              &msc SCRL_UP
+&trans      &kp LC(Z)     &kp LC(X)           &kp LC(C)   &kp LC(V)  &none      &kp C_MUTE                    &mmv MOVE_DOWN                   &delete_line_macro  &kp PG_UP  &kp PG_DN  &kp RET    &comment_ignore_mods  &msc SCRL_DOWN
+                                              &trans      &mo 11     &trans                                                                    &lt 1 UNDERSCORE    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
         fn_num_layer {
-            display-name = "FN-NUM";
+            display-name = "Fn-Num";
             bindings = <
-&trans            &kp F3  &kp F4    &kp F5    &kp F6      &kp F7                            &mmv MOVE_UP                     &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS   &kp KP_NUMLOCK
-&kp LEFT_SHIFT    &kp F2  &kp F10   &kp F11   &kp F12     &kp F8            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none            &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BSPC       &kp ESCAPE
-&kp LEFT_CONTROL  &kp F1  &mkp MB4  &mkp MB5  &kp LA(F5)  &kp F9  &trans                    &mmv MOVE_DOWN                   &kp KP_PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &kp SCROLLLOCK
-                                    &trans    &trans      &trans                                                             &kp KP_ENTER     &kp N0        &kp KP_DOT
+&trans            &kp F3  &kp F4    &kp F5    &kp F6      &kp F7                            &mmv MOVE_UP                     &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS   &kp KP_NUMLOCK
+&kp LEFT_SHIFT    &kp F2  &kp F10   &kp F11   &kp F12     &kp F8            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none            &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp BSPC       &kp ESCAPE
+&kp LEFT_CONTROL  &kp F1  &mkp MB4  &mkp MB5  &kp LA(F5)  &kp F9  &trans                    &mmv MOVE_DOWN                   &kp KP_PLUS      &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE  &kp SCROLLLOCK
+                                    &trans    &trans      &trans                                                             &kp KP_ENTER     &kp N0     &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -342,10 +342,10 @@
         osl_l_layer {
             display-name = "OSL L";
             bindings = <
-&trans         &trans                            &sl 9                    &sl 8                      &trans                     &none                                 &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
-&to 0          &hrm_hold_macro LS(LEFT_CONTROL)  &hrm_behavior LALT LALT  &hrm_behavior LSHFT LSHFT  &hrm_behavior LCTRL LCTRL  &sl 11                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&kp RC(RSHFT)  &kp LC(HOME)                      &kp LC(END)              &none                      &none                      &trans      &trans                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &trans
-                                                                          &trans                     &trans                     &gui_macro                                                             &trans  &trans  &trans
+&trans         &trans                            &sl 10                   &sl 8                      &trans                     &none                                      &mmv MOVE_UP                     &trans  &studio_unlock  &trans  &trans  &trans  &trans
+&to 0          &hrm_hold_macro LS(LEFT_CONTROL)  &hrm_behavior LALT LALT  &hrm_behavior LSHFT LSHFT  &hrm_behavior LCTRL LCTRL  &sl 14                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans          &trans  &trans  &trans  &trans
+&kp RC(RSHFT)  &kp LC(HOME)                      &kp LC(END)              &none                      &none                      &kp PAUSE_BREAK  &trans                    &mmv MOVE_DOWN                   &trans  &trans          &trans  &trans  &trans  &trans
+                                                                          &trans                     &trans                     &trans                                                                      &trans  &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -354,10 +354,10 @@
         ols_r_layer {
             display-name = "OSL R";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &mmv MOVE_UP                     &trans  &trans                   &trans                       &trans                     &trans                           &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &hrm_behavior RALT RALT  &hrm_behavior RSHIFT RSHIFT  &hrm_behavior RCTRL RCTRL  &hrm_behavior LEFT_GUI LEFT_GUI  &to 0
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &trans  &trans                   &trans                       &trans                     &trans                           &trans
-                        &trans  &trans  &trans                                                             &trans  &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &mmv MOVE_UP                     &sys_reset  &trans                   &trans                       &trans                     &trans                           &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans      &hrm_behavior RALT RALT  &hrm_behavior RSHIFT RSHIFT  &hrm_behavior RCTRL RCTRL  &hrm_behavior LEFT_GUI LEFT_GUI  &to 0
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &kp INSERT  &trans                   &trans                       &trans                     &trans                           &trans
+                        &trans  &trans  &trans                                                             &trans      &trans                   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -375,7 +375,7 @@
         };
 
         mouse_layer {
-            display-name = "MOUSE";
+            display-name = "Mouse";
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans                            &mmv MOVE_UP                     &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
@@ -388,46 +388,42 @@
 
         explorer_layer {
             bindings = <
-&none  &none  &kp LC(W)        &none     &none                       &kp LC(T)                  &none         &none        &none                &none      &none      &kp PAUSE_BREAK  &none
-&to 0  &none  &kp LC(PAGE_UP)  &none     &kp LC(PAGE_DOWN)           &none               &none  &none  &none  &none        &sk RALT             &sk RSHFT  &sk RCTRL  &sk RGUI         &none
-&none  &none  &none            &kp CAPS  &none                       &none      &none           &none         &enye_macro  &enye_macro_capital  &none      &none      &none            &none
-                               &none     &cancel_custom_layer_macro  &none                                    &none        &none                &none
+&none  &none  &kp LC(W)        &none     &none                       &kp LC(T)                        &none         &none        &none     &none      &none      &none     &none
+&to 0  &none  &kp LC(PAGE_UP)  &none     &kp LC(PAGE_DOWN)           &none                     &none  &none  &none  &none        &sk RALT  &sk RSHFT  &sk RCTRL  &sk RGUI  &none
+&none  &none  &none            &kp CAPS  &none                       &kp PAUSE_BREAK  &none           &none         &enye_macro  &none     &none      &none      &none     &none
+                               &none     &cancel_custom_layer_macro  &none                                          &none        &none     &none
             >;
-
-            label = "EXPLORER";
-        };
-
-        windows_layer {
-            bindings = <
-&none  &kp LA(F4)       &none          &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &none                  &none         &none  &none  &none  &none  &none  &none
-&none  &kp PRINTSCREEN  &kp LG(LS(S))  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &none           &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none            &none          &none               &none             &none  &none           &none         &none  &none  &none  &none  &none  &none
-                                       &none               &none             &none                                &none  &none  &none
-            >;
-
-            label = "WIN";
         };
 
         multimedia_layer {
             bindings = <
-&none  &none  &none  &kp LEFT_ARROW  &kp RIGHT_ARROW    &none                            &none         &none       &none       &none  &none  &none  &none
-&none  &none  &none  &none           &none              &none                     &none  &none  &none  &none       &none       &none  &none  &none  &none
-&none  &none  &none  &none           &none              &none            &none           &none         &none       &kp C_MUTE  &none  &none  &none  &none
-                     &none           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                &kp RETURN  &none       &none
+&none  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE                  &none         &none       &none  &none  &none  &none  &none
+&none  &none         &none             &none              &none            &none                &none  &none  &none  &none       &none  &none  &none  &none  &none
+&none  &none         &none             &none              &none            &none       &none           &none         &none       &none  &none  &none  &none  &none
+                                       &none              &none            &kp SPACE                                 &kp RETURN  &none  &none
             >;
-
-            label = "MULTIMEDIA";
         };
 
-        toggle_layer {
+        windows_layer {
             bindings = <
-&trans  &trans  &trans          &trans        &sys_reset  &trans                    &trans          &trans          &studio_unlock  &kp INSERT  &trans  &trans  &trans
-&trans  &trans  &kp SCROLLLOCK  &trans        &trans      &trans            &trans  &trans  &trans  &trans          &trans          &trans      &trans  &trans  &trans
-&trans  &trans  &trans          &kp CAPSLOCK  &trans      &trans  &trans            &trans          &kp KP_NUMLOCK  &trans          &trans      &trans  &trans  &trans
-                                &trans        &trans      &trans                                    &trans          &trans          &trans
+&none  &kp LA(F4)       &kp LG(LEFT)   &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none                  &none         &none  &none  &none  &none  &none  &none
+&none  &kp PRINTSCREEN  &kp LG(LS(S))  &none             &none          &none           &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none            &none          &none             &none          &none  &none           &none         &none  &none  &none  &none  &none  &none
+                                       &none             &none          &none                                &none  &none  &none
             >;
 
-            label = "TOGGLE";
+            label = "win_layer";
+        };
+
+        Toggle_Layer {
+            bindings = <
+&trans  &trans  &trans          &trans        &trans  &trans                    &trans          &trans  &trans          &kp INSERT  &trans  &trans  &trans
+&trans  &trans  &kp SCROLLLOCK  &trans        &trans  &trans            &trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans  &trans
+&trans  &trans  &trans          &kp CAPSLOCK  &trans  &trans  &trans            &trans          &trans  &kp KP_NUMLOCK  &trans      &trans  &trans  &trans
+                                &trans        &trans  &trans                                    &trans  &trans          &trans
+            >;
+
+            label = "Toggle_Layer";
         };
 
         gaming_layer {
