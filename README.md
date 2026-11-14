@@ -70,6 +70,7 @@ This configuration is optimized for **German developers** using a **US-ANSI base
     - Shift/Caps Lock Tap Dance on the left Shift.
     - Backspace/Delete Mod-Morph (Backspace on tap, Delete on Shift+tap).
     - Mouse movement and scrolling integrated into layers.
+* **Displays:** Both keyboard halves show the Hammerbeam slideshow on their nice!view displays, cycling through 30 images every 5 minutes (10 seconds per image).
 
 #### Dependencies
 
@@ -77,7 +78,6 @@ This configuration is optimized for **German developers** using a **US-ANSI base
 - hammerbeam-slideshow (GPeye)
 - prospector-zmk-module (tokyo2006)  
 - zmk-dongle-display (englmaxi)
-- nice-view-gem v0.3.0 (M165437)
 
 #### Build
 
