@@ -2,8 +2,8 @@ manifest:
     remotes:
         - name: zmkfirmware
           url-base: https://github.com/zmkfirmware
-        - name: infely
-          url-base: https://github.com/infely
+        - name: gpeye
+          url-base: https://github.com/GPeye
         - name: arman639
           url-base: https://github.com/arman639
         - name: englmaxi
@@ -19,8 +19,8 @@ manifest:
         - name: zmk-dongle-display
           remote: englmaxi
           revision: v0.3
-        - name: nice-view-battery
-          remote: infely
-          revision: a9ebccd6309e21525577dc35fea4eb107bda7cd1
+        - name: hammerbeam-slideshow
+          remote: gpeye
+          revision: 9c16436efa4c87d19e2e4558927969c7ddd5851d
     self:
         path: config
